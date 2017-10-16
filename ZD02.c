@@ -15,7 +15,16 @@ int main() {
 	int Broj;
 	printf("Ucitaj s tastature jedan(1) cijeli troznamenkasti broj");
 	scanf("%3d",&Broj);
-	printf("%d\n",Broj);
-	printf("%d",(Broj/10)%10);
+	printf("Zbroj je: %d",Suma(Broj));
+	printf("\n%d",(Broj/10)%10);
 	return 0;
+}
+int Suma(int Upis) {
+	int Zbroj = 0;
+	int i;
+	for(i = 0; i < 3; i++){
+		Zbroj += Upis%10;
+		Upis /= 10;
+	}
+	return Zbroj;
 }
