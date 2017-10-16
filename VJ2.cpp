@@ -1,3 +1,10 @@
+/***************************************/
+/*      Luka Rolak                     */
+/*      0246077844                     */
+/*      Tjedan 03 Vjezba 02            */
+/*      Naslov: main & comment         */
+/***************************************/
+
 #include <conio.h>
 #include <stdio.h>
 #include <stdlib.h>
