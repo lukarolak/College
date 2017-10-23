@@ -48,13 +48,12 @@ void treci(){
 	float a, b, c;
 	scanf("%f %f %f", &a, &b, &c);
 	float max = a;
-	float minn = a;
+	float min = 0;
 	if (b > max)
 		max = b;
 	if (c > max)
 		max = c;
 	printf("Najveci broj je %f", max);
-	if (abs)
 
 
 }
