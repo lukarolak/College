@@ -98,10 +98,11 @@ void Cetvrti(){
 void Sesti(){
 	int upis;
 	scanf("%d", &upis);
-	while (upis / 10 != 0){
+	while (upis){
 		printf("%d ", upis % 2);
 		upis /= 2;
 	}
+	
 	getch();
 }
 int main(){
