@@ -105,7 +105,17 @@ void Sesti(){
 	
 	getch();
 }
+void Sedmi(){
+	int a, b, brojac;
+	scanf("%d %d", &a, &b);
+	brojac = a;
+	while (brojac < b){
+		printf("%d \n", (char)brojac);
+		brojac++;
+	}
+	getch();
+}
 int main(){
-	Sesti();
+	Sedmi();
 	return 0;
 }
