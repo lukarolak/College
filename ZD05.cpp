@@ -12,7 +12,7 @@ int main() {
 	int *pt1, *pt2;
 	i = 4;
 	pt1 = &i;
-	printf("%p", pt1);
+	printf("%d", *pt1);
 	*pt1 += 4;
 	printf("\n%p\n", pt1);
 	//odgovor: nije
