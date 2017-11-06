@@ -91,7 +91,7 @@ void Sesti(){
 }
 
 
-void Test(){
+void Test(){ //neki moj kod
 	int i = 0;
 	int *pP = &i;
 	for (int i = 0; i < 200; i++){
