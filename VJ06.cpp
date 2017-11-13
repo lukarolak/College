@@ -58,7 +58,6 @@ int Peti(){
 			//poljeB[i][j] = i + j; //dio za test
 		}
 	}
-	//https://bs.wikipedia.org/wiki/Vektorski_proizvod
 	for (int i = 0; i < 4; i++){
 		for (int j = 0; j < 4; j++){
 			int zbroj = 0;
