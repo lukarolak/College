@@ -57,7 +57,7 @@ void Cetvrti(){
 			printf("redak: %d supac: %d",i,j);
 			i = n; j = m; //ovo mi služi kao break; funkcija, u ovom sluæaju 
 			//				ne mogu je koristiti jer mi break izlazi samo iz
-			//				prve j petlje, a ne iz obadvije kao bih htio,
+			//				prve j petlje, a ne iz obje kao bih htio,
 			//				stoga ako je i=n && j=m prekidam obje petlje
 			}
 		}
