@@ -55,7 +55,7 @@ void Cetvrti(){
 		for(int j = 0; j < m; j++){
 			if(max == A[i][j]){
 			printf("redak: %d supac: %d",i,j);
-			i = n; j = m; //ovo mi služi kao break; funkcija, u ovom sluæaju 
+			i = n; j = m; //ovo mi sluÅ¾i kao break; funkcija, u ovom sluÃ¦aju 
 			//				ne mogu je koristiti jer mi break izlazi samo iz
 			//				prve j petlje, a ne iz oba dvije kao bih htio,
 			//				stoga ako je i=n && j=m prekidam obje petlje
