@@ -39,10 +39,10 @@ void Cetvrti(){
 	for(int i = 0; i < n; i++){
 		for(int j = 0; j < m; j++){
 			scanf("%d",A[i][j]);
-			//A[i][j] = rand()%10; Automatski unos vrijednosti
-			//printf("%d ",A[i][j]); Automatski unos vrijednosti
+			//A[i][j] = rand()%10; //Automatski unos vrijednosti
+			//printf("%d ",A[i][j]); //Automatski unos vrijednosti
 		}
-		//printf("\n"); Automatski unos vrijednosti
+		//printf("\n"); //Automatski unos vrijednosti
 	}
 	max = A[0][0];
 	for(int i = 0; i < n; i++){
