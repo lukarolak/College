@@ -4,8 +4,9 @@
 void func(double a, double b);
 double a; double b;
 int main(){
-	scanf("%lf", &a); scanf("%lf", &b);
+	scanf("%lf %lf",&a, &b);
 	func(a,b);
+	printf("%f %f",a,b);
 }
 void func(double prvi, double drugi){
 	 if(a>b){
