@@ -92,7 +92,16 @@ int Min(int A[][M], int B[]){
 	return minimum;
 }
 void ScanPrvi(void){
-	char upis[100]; char *P;
-	scanf("%2d.%2d.%4d", &upis);
-	printf("%s", upis);
+	char ispis[100];
+	for (int i = 0; i < 1; i++){
+		int dan[2], mjesec[2], god[2]; char ime[100];
+		scanf("%2d.%2d.%4d%s", &dan, &mjesec, &god, &ime);
+		int maxa = 0, maxb = 0, maxc = 0;
+		if (maxa < dan[0] && maxb < mjesec[0] && maxc < god[0]){
+			maxa = dan[0];  maxb = mjesec[0]; maxc = god[0];
+			for (int i = 0; i < 100; i++)
+				ispis[i] = ime[i];
+		}
+	}
+	printf("%s \n", ispis);
 }
