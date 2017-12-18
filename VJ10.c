@@ -24,7 +24,7 @@ int main(){
 	//printf("%d", Desno(A, B)); //Drugi
 	//printf("%d", Max(A,B)); //Treci
 	//printf("%d", Min(A,B)); //Cetvrti
-	ScanPrvi();
+	//ScanPrvi(); //ScanfPrvi
 	getch();
 	return 0;
 }
