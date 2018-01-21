@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+//Load-anje file-ova
+FILE *fp;
+int c; //ovo može biti char ili int ovisno o  tome kakav vam podatak iz file-a treba
+int n = 0;
+
+fp = fopen("c:\\temp\\ulaz.txt", "r"); //adresa na kojoj je file
+if (fp == NULL) { //ako nije file nađen, izađi iz koda
+	perror("Error in opening file");
+	return;
+} do {
+	  c = fgetc(fp); //stavi jedan char u variablu c
+	  if (feof(fp)) { //ako je c == end of file char izađi iz programa
+	  	break;
+	  }
+
+  printf("%c", c); 
+} while (1);
+
+//Pisanje u file
+  FILE *fp;
+	char c;
+	int n = 0;
+	char abc[] = {'a','b','c','d','\n','b','c','d'};
+	fp = fopen("c:\\temp\\ulaz.txt", "w"); //adresa na kojoj je file
+	if (fp == NULL) { //ako nije file nađen, izađi iz koda
+		perror("Error in opening file");
+		return;
+	} 
+	int i;
+	for(i = 0; i < sizeof(abc)/sizeof(abc[0]);i++){ //i=0, dok i nije veci od dužine array-a
+		fputc(abc[i], fp );
+	}
+	fclose(fp);
+
+	  
