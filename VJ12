@@ -6,6 +6,7 @@
 
 char aa[] = "5678";
 char bb[] = "1234";
+char upis[1000];
 int ZZ(char a[], char b[]){
 	if (sizeof(a) / sizeof(char) < 2 || sizeof(b) / sizeof(char) < 2)
 		return 1;
@@ -23,7 +24,36 @@ int ZZ(char a[], char b[]){
 	}
 
 }
+int DrugiBrojRijeci(char a[]){
+	int brojac = 0;
+	printf("%d\n", sizeof(a) / sizeof(char));
+	for (int i = 0; i < sizeof(a) / sizeof(char); i++){
+		if (a[i] == ' ')
+			brojac++;
+	}
+	return brojac;
+}
+int DrugiBrojSamoglasnika(char a[]){
+	int brojac = 0;
+	for (int i = 0; i < sizeof(a) / sizeof(char); i++){
+		if (a[i] != 'a' || a[i] != 'e' || a[i] != 'i' || a[i] != 'o' || a[i] != 'u')
+			brojac++;
+	}
+	return brojac;
+}
 int main(){
-	printf("%d", ZZ(aa, bb));
+	//printf("%d", ZZ(aa, bb));
+	char ch = 'a';
+	int i = 0;
+	while (ch != '\n')    // terminates if user hit enter
+	{
+		if (i == 999)
+			break;
+		ch = getchar();
+		upis[i] = ch;
+		i++;
+	}
+	printf("%s", upis);
+	printf("%d %d", DrugiBrojRijeci(upis));//, DrugiBrojSamoglasnika(upis));
 	getch();
 }
