@@ -4,6 +4,8 @@
 #include <ctype.h>
 #include <string.h>
 
+char aa[] = "5678";
+char bb[] = "1234";
 int ZZ(char a[], char b[]){
 	if (sizeof(a) / sizeof(char) < 2 || sizeof(b) / sizeof(char) < 2)
 		return 1;
