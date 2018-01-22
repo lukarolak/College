@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int ZZ(char a[], char b[]){
+	if (sizeof(a) / sizeof(char) < 2 || sizeof(b) / sizeof(char) < 2)
+		return 1;
+	else
+	{
+		char temp = a[sizeof(a) / sizeof(char) - 1];
+		a[sizeof(a) / sizeof(char) - 1] = b[sizeof(b) / sizeof(char) - 1];
+		b[sizeof(b) / sizeof(char) - 1] = temp;
+		temp = a[0];
+		a[0] = b[0];
+		b[0] = temp;
+		printf("%s\n", a);
+		printf("%s\n", b);
+		return 0;
+	}
+
+}
+int main(){
+	printf("%d", ZZ(aa, bb));
+	getch();
+}
