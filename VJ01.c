@@ -12,7 +12,7 @@ int main(){
 	printf("upis 4znamenkastog cijelog broja\n");
 	scanf("%4d", &i);
 	printf("upis 3znamenkastog cijelog broja\n");
-	scanf("%4d", &j);
+	scanf("%3d", &j);
 	printf("upis 5znamenkastog broja s dvije decimale\n");
 	scanf("%5f", &x);
 	//a
